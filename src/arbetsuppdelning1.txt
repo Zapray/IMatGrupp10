@@ -1,0 +1,22 @@
+uppgifts uppdelning:
+
+
+Johan
+-huvudframen
+-skalet för koden
+
+Harry
+-ikoner och bilder
+-logotype
+-uppgiftsinmatning
+
+Viktor
+-matMatrisen
+-startsida
+
+Kim
+-kvitto
+-kassa
+
+
+- funktionalitet , jobba onsdag dela upp det då. 9:00
