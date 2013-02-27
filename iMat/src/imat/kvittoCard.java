@@ -5,31 +5,31 @@ import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
-import se.chalmers.ait.dat215.lab2.Recipe;
+import se.chalmers.ait.dat215.project.*;
 
 public class kvittoCard extends javax.swing.JPanel {
     
     // My variables
-    private List<Recipe> recipeList;
+    private List<Product> kvittoList;
     
     /** Creates new form RecipeListCard */
-    public kvittoCard(List<Recipe> recipeList) {
+    public kvittoCard(List<Product> kvittoList) {
         // Swing initialization
         initComponents();
         // My initialization
-        this.recipeList = recipeList;
+        this.kvittoList = kvittoList;
         initList();
         addListener();
     }
     
     private void initList() {
         recipeJList.setFixedCellHeight(90);
-        RecipeCell[] recipes = new RecipeCell[recipeList.size()];
+        RecipeCell[] recipes = new RecipeCell[kvittoList.size()];
         // Fill the array recipes with RecipeCells
         for (int i = 0; i < recipes.length; i++) {
-            Recipe recipe = recipeList.get(i);
-            recipes[i] = new RecipeCell(recipe.getName(), recipe.getCuisine(),
-                    recipe.getPrice(), recipe.getTime(), recipe.getImage());
+            Product product = kvittoList.get(i);
+            //recipes[i] = new RecipeCell(product.getName(),
+              //      product.getPrice());
             
             
             

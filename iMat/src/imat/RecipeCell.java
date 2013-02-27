@@ -33,11 +33,12 @@ public class RecipeCell {
     }
     
     //Constructor
-    public RecipeCell(String name, String cuisine, int price, int time, ImageIcon image) {
+    public RecipeCell(String name, int price,int amount) {
         this.name = name;
         this.price = price;
         this.amount = amount;
-        this.image = image;
+        this.sum = price*amount;
+        
     }
     
 }

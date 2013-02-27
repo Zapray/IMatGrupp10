@@ -2,6 +2,7 @@ package imat;
 
 import java.awt.BorderLayout;
 import java.util.List;
+import se.chalmers.ait.dat215.project.*;
 
 
 // I viewen för att sätta kortet
@@ -12,8 +13,9 @@ import java.util.List;
 public class MainCard extends javax.swing.JPanel {
     
     // My variables
-    private kvittoCard recipeListCard;
+    private kvittoCard kvittoList;
     private RecipeCard recipeCard;
+    
     
     /** Creates new form MainCard */
     public MainCard() {
@@ -23,22 +25,22 @@ public class MainCard extends javax.swing.JPanel {
         setLayout(new java.awt.GridLayout());
     }
     
-  /*  public void setRecipeListCard(List<Recipe> recipeList) {
+   public void setRecipeListCard(List<Product> kvittoList) {
         removeAll();
-        recipeListCard = new RecipeListCard(recipeList);
-        recipeListCard.setVisible(true);
-        add(recipeListCard, BorderLayout.CENTER);
+        kvittoCard = new kvittoCard(kvittoList);
+        kvittoCard.setVisible(true);
+        add(kvittoCard, BorderLayout.CENTER);
         updatePanel();
     }
     
-    public void setRecipeCard(Recipe recipe, List<Recipe> recipeList) {
+    public void setRecipeCard(Product product, List<Product> kvittoList) {
         removeAll();
-        recipeCard = new RecipeCard(recipe, recipeList);
+        recipeCard = new RecipeCard(product, kvittoList);
         recipeCard.setVisible(true);
         add(recipeCard, BorderLayout.CENTER);
         updatePanel();
     }
-    */
+    
     private void updatePanel() {
         revalidate();
         repaint();

@@ -38,6 +38,8 @@ public class SplashPanel extends javax.swing.JPanel {
             FoodPanel fp = new FoodPanel(p, 50, 50);
             jPanel5.add(fp);
         }
+         jScrollPane1.getVerticalScrollBar().setUnitIncrement(16);
+          jScrollPane2.getVerticalScrollBar().setUnitIncrement(16);
         
         repaint();
     }
