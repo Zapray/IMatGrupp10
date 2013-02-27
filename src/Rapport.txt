@@ -1,0 +1,105 @@
+Rapport Design och Konstruktion av Grafiska Gränssnitt
+Kim Egenvall, Harry Eriksson, Victor, Johan 
+Grupp 10
+
+1. Inledning
+Uppgiften består av att designa och implementera ett program som ska användas för att
+handla mat hemifrån via en desktop-applikation. Målgruppen för programmet specifieras
+genom två personas vid namn Stefan och Alexandra. Det som kännetecknar målgruppen är att 
+de ofta är på resande fot och inte har möjlighet att åka och storhandla på grund av bristande 
+utrymme eller tidsbrist. Våra personas är båda skickliga datoranvändare och gillar snabba 
+och välutvecklade system där de prioriterar användarvänlighet i form av 
+konfiguration,genomtänkt design och en gedigen kvalitativ upplevelse. 
+Vårt uppdrag blir att utveckla iMat på ett sådant sätt som kan underlätta mat-shoppingen
+för människor på språng, men som nödvändigtvis inte vill kompromissa på kvalité och upplevelsen
+som det innebär att besöka en vanlig butik.
+
+2.Bakgrund
+Innan vår grupp hade sitt första möte kom vi överens om att alla medlemmar skulle bidra
+med var sin skiss så att vi oberoende av varandra skulle presentera våra idéer.
+Som följd av detta kunde vi skissa upp ett program tillsammans på det första mötet som ska 
+tillfredställa målgruppens krav och förväntningar på vår applikation. Det skulle visa sig
+att våra oberoende skisser var ganska snarlika varandra och kunde därför dra slutsatsen att
+det antagligen ligger något vinnande koncept bakom våra idéer eftersom alla kom fram till
+liknande lösningar utan att ha sett varandras skisser. Vi beslutade även att inte dela upp
+arbetet i olika delar förrän den slutgiltiga pappersskissen var klar och testad.
+
+3.Koncept
+iMat fokuserar väldigt mycket på användarvänlighet i form av enkel navigering, safe-exploration och bygger i grund
+och botten på ett feature, search and browse mönster. För att enkelt kunna beskriva programmet 
+så delar vi upp det i tre delar, feature-fönstret, browse menyn samt en top-bar.
+
+Top-bar'en ligger som namnet antyder högst upp i programmet och sträcker sig över hela bredden och kan delas in 
+i tre delar: menyknappar, varukorg samt en minimal visning av innehållet i varukorgen.
+ - Menyknappar
+ 	Här ligger 5 beskrivande ikoner som hjälper användaren att navigera genom de olika funktionaliteterna i programmet.
+ 	Det finns en hemknapp, inställningar, inköpslistor, köphistorik samt favoriter.
+ 	
+ - Varukorg
+ 	En beskrivande bild av en kundvagn som även visar antalet varor som är inlagda och visar 
+ 	det totala priset för varorna i kundvagnen
+ 	
+ - Visning av innehåll
+ 	Vi har valt att visa de två senaste inlagda varorna i korgen i form av en sträng med
+ 	" Antal, Namn, Pris," samt en "ta bort" knapp.
+ 	Tanken bakom denna visning är att ha en lättillgänglig översikt över vad man precis har
+ 	lagt till och enkelt ska kunna ta bort de senaste artiklarna i kundvagnen om man ändrar sig.
+ 	
+Browse meny:
+Denna meny är lokaliserad längst till vänster i programmet och sträcker sig vertikalt från topbaren till
+botten av programmet.
+Överst i denna meny har vi placerat en sökruta med en ikon som man förknippar med just sök, detta för att användaren
+visuellt ska kunna hitta vart man söker snabbt och enkelt.
+
+Under sökrutan finner vi en rad huvudmenyer som beskriver de stora produktkategorierna som exempelvis Frukt och Grönt samt Kött och Fisk.
+Tanken är att om man inte vet vad man är ute efter, utan går och spanar (precis som i en affär) så klickar man på en kategori och
+innehållet visas då upp i feature-fönstret. Visa huvudkategorier är tillräckligt stora för att hålla underkategorier, väljer
+man då en underkategori så anpassas innehållet i feature-fönstret mer restriktivt för att bättre visa de varor under den valda
+underkategorin. Vi har dock endast en nivå av underkategorier för att undvika långa strukturer av dropdowns som ofta kan uppfattas som
+stökiga och ej nödvändiga. Menyerna fungerar så att om man klickar på en huvudkategori som innehåller en underkategori så flyttas
+de övriga huvudkategorierna ner samtidigt som undermenyerna visas. Som en följd av detta är alltid alla huvudkategorier synliga och 
+man kan enkelt navigera mellan de olika menyerna, skulle man öppna en ny underkategori så stängs den föregående.
+
+Feature-fönstret:
+Här visas butikens produkter i form av en grid-layout. Enskilda produkter visas i form av en ruta med namn överst, en stjärna för favoritmarkering,
+under har vi en relativt stor thumbnail av produktbilden eftersom kunden handlar främst med ögonen, man köper det som ser bra ut.
+Under bilden visas pris, ett textfält för antal som man kan ändra samt en knapp för lägg till. Tanken är att när man trycker lägg till 
+så ska användaren direkt få visuell feedback på att den valda varan läggs till i kundvagnen. Stjärnan för favoritmarkering ger även den
+visuell feedback i form av att den ändrar färg från grå till gul när en vara markeras som favorit.
+
+Överst i feature-fönstret har vi en liten navigeringsbar med titel på den kategori man står under, samt fram och bakåtknapp för att 
+kunna navigera mellan de olika vyer man nyss har befunnit sig i.
+
+När man startar programmet så kommer feature-fönstret bestå av tre olika delar, en rad med utvalda produkter som vi bestämde att använda oss
+av för att tillfredställa våra personas eftersom det framgår att hen tycker om att få tips samt att hen är en social person som kan finna det intressant
+att se vad andra har handlat.
+
+Första sidan kommer även att anpassas beroende på om du tidigare har handlat något samt lagt till några inköpslistor. Har man inget sådant sparat sen tidigare
+visas fler utvalda produkter, men om man har genomfört köp tidigare eller sparat inköpslistor så kommer dessa visas i ett grid precis som vanliga produkter, med
+undantag från att varje ruta består av mosaik av thumbnails. Trycker man på en av rutorna i mosaiken får man upp en ny gridvy där alla varor från det inköpet/ den inköpslistan visas.
+
+De ikoner som representeras av köphistorik och inköpslistor visas även över dessa rutor för att man ska kunna dra den visuella kopplingen mellan ikonerna i top-baren samt vad de representerar.
+Man kan även välja att lägga till hela inköpslistan eller det föregående köpet direkt i kundvagnen.
+
+Utcheckning:
+Klickar man på kundvagnen i top-baren så kommer man till en listvy över sin kundvagn där man får en bra översikt över vilka varor man har lagt till, här kan man även redigera antal, ta bort artiklar helt
+samt spara sin inköpslista och gå vidare till betalskärmen.
+
+Betalvy:
+En standard betalvy där man får mata in sin personliga information, betalningsalternativ samt leveransalternativ.
+Här beskriver vi att på grund av skydd mot personens integritet så sparas inga uppgifter, man kan dock om man vill kryssa i en checkbox som säger "Spara uppgifter tills nästa gång"
+Då kommer alla fält vara automatiskt ifyllda nästa gången personen ska genomföra ett köp. 
+I denna vy kan man välja Avbryt eller Genomför Köp som slutalternativ.
+
+Kvitto:
+Väljer man att genomföra köpet så förs man vidare till kvittot där man får ett viruellt kvitto 
+i form av en lista med namn, antal, styckpris och det totala priset. Här kan man även se sin personliga information så
+som namn och adress. Man får även en bekräftelse med timestamp när beställningen togs emot och man kan välja att få kvittot mailat
+till sig eller gå tillbaka till startsidan.
+ 	
+4.Realisering (design och implemneterinsgprocessen)
+	4.1 Pappersprototyp
+	4.2 Test och utvärdering
+	4.3 Mjukvaruprototyp
+Resultat (beskrivning av slutresultatet)
+Diskussion
