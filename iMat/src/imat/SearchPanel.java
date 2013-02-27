@@ -30,6 +30,7 @@ public class SearchPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -59,27 +60,35 @@ public class SearchPanel extends javax.swing.JPanel {
 
         jPanel1.setName("jPanel1"); // NOI18N
 
+        buttonGroup1.add(jToggleButton1);
         jToggleButton1.setText(resourceMap.getString("jToggleButton1.text")); // NOI18N
         jToggleButton1.setName("jToggleButton1"); // NOI18N
 
+        buttonGroup1.add(jToggleButton2);
         jToggleButton2.setText(resourceMap.getString("jToggleButton2.text")); // NOI18N
         jToggleButton2.setName("jToggleButton2"); // NOI18N
 
+        buttonGroup1.add(jToggleButton3);
         jToggleButton3.setText(resourceMap.getString("jToggleButton3.text")); // NOI18N
         jToggleButton3.setName("jToggleButton3"); // NOI18N
 
+        buttonGroup1.add(jToggleButton4);
         jToggleButton4.setText(resourceMap.getString("jToggleButton4.text")); // NOI18N
         jToggleButton4.setName("jToggleButton4"); // NOI18N
 
+        buttonGroup1.add(jToggleButton5);
         jToggleButton5.setText(resourceMap.getString("jToggleButton5.text")); // NOI18N
         jToggleButton5.setName("jToggleButton5"); // NOI18N
 
+        buttonGroup1.add(jToggleButton6);
         jToggleButton6.setText(resourceMap.getString("jToggleButton6.text")); // NOI18N
         jToggleButton6.setName("jToggleButton6"); // NOI18N
 
+        buttonGroup1.add(jToggleButton7);
         jToggleButton7.setText(resourceMap.getString("jToggleButton7.text")); // NOI18N
         jToggleButton7.setName("jToggleButton7"); // NOI18N
 
+        buttonGroup1.add(jToggleButton8);
         jToggleButton8.setText(resourceMap.getString("jToggleButton8.text")); // NOI18N
         jToggleButton8.setName("jToggleButton8"); // NOI18N
 
@@ -146,6 +155,7 @@ private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
 }//GEN-LAST:event_jTextField1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
