@@ -32,6 +32,15 @@ public class SearchPanel extends javax.swing.JPanel {
 
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jToggleButton2 = new javax.swing.JToggleButton();
+        jToggleButton3 = new javax.swing.JToggleButton();
+        jToggleButton4 = new javax.swing.JToggleButton();
+        jToggleButton5 = new javax.swing.JToggleButton();
+        jToggleButton6 = new javax.swing.JToggleButton();
+        jToggleButton7 = new javax.swing.JToggleButton();
+        jToggleButton8 = new javax.swing.JToggleButton();
 
         setName("Form"); // NOI18N
 
@@ -48,6 +57,66 @@ public class SearchPanel extends javax.swing.JPanel {
         jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
         jLabel1.setName("jLabel1"); // NOI18N
 
+        jPanel1.setName("jPanel1"); // NOI18N
+
+        jToggleButton1.setText(resourceMap.getString("jToggleButton1.text")); // NOI18N
+        jToggleButton1.setName("jToggleButton1"); // NOI18N
+
+        jToggleButton2.setText(resourceMap.getString("jToggleButton2.text")); // NOI18N
+        jToggleButton2.setName("jToggleButton2"); // NOI18N
+
+        jToggleButton3.setText(resourceMap.getString("jToggleButton3.text")); // NOI18N
+        jToggleButton3.setName("jToggleButton3"); // NOI18N
+
+        jToggleButton4.setText(resourceMap.getString("jToggleButton4.text")); // NOI18N
+        jToggleButton4.setName("jToggleButton4"); // NOI18N
+
+        jToggleButton5.setText(resourceMap.getString("jToggleButton5.text")); // NOI18N
+        jToggleButton5.setName("jToggleButton5"); // NOI18N
+
+        jToggleButton6.setText(resourceMap.getString("jToggleButton6.text")); // NOI18N
+        jToggleButton6.setName("jToggleButton6"); // NOI18N
+
+        jToggleButton7.setText(resourceMap.getString("jToggleButton7.text")); // NOI18N
+        jToggleButton7.setName("jToggleButton7"); // NOI18N
+
+        jToggleButton8.setText(resourceMap.getString("jToggleButton8.text")); // NOI18N
+        jToggleButton8.setName("jToggleButton8"); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 193, Short.MAX_VALUE)
+            .addComponent(jToggleButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 193, Short.MAX_VALUE)
+            .addComponent(jToggleButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 193, Short.MAX_VALUE)
+            .addComponent(jToggleButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 193, Short.MAX_VALUE)
+            .addComponent(jToggleButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 193, Short.MAX_VALUE)
+            .addComponent(jToggleButton6, javax.swing.GroupLayout.DEFAULT_SIZE, 193, Short.MAX_VALUE)
+            .addComponent(jToggleButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 193, Short.MAX_VALUE)
+            .addComponent(jToggleButton8, javax.swing.GroupLayout.DEFAULT_SIZE, 193, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jToggleButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jToggleButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jToggleButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jToggleButton4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jToggleButton5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jToggleButton6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jToggleButton7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jToggleButton8)
+                .addContainerGap(261, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -58,6 +127,7 @@ public class SearchPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -66,7 +136,8 @@ public class SearchPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(501, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -76,6 +147,15 @@ private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JToggleButton jToggleButton2;
+    private javax.swing.JToggleButton jToggleButton3;
+    private javax.swing.JToggleButton jToggleButton4;
+    private javax.swing.JToggleButton jToggleButton5;
+    private javax.swing.JToggleButton jToggleButton6;
+    private javax.swing.JToggleButton jToggleButton7;
+    private javax.swing.JToggleButton jToggleButton8;
     // End of variables declaration//GEN-END:variables
 }
