@@ -16,6 +16,7 @@ import javax.swing.Timer;
 import javax.swing.Icon;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
+import java.awt.*;
 
 /**
  * The application's main frame.
@@ -29,6 +30,8 @@ public class IMatView extends FrameView {
         manuallyInitComponents();
         
         jPanel4.add(new SplashPanel());
+        
+        
         //jScrollPane1.getVerticalScrollBar().setUnitIncrement(10);
         
         
@@ -86,6 +89,7 @@ public class IMatView extends FrameView {
         jPanel4 = new javax.swing.JPanel();
 
         mainPanel.setName("mainPanel"); // NOI18N
+        mainPanel.setLayout(new java.awt.BorderLayout());
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jPanel1.setName("jPanel1"); // NOI18N
@@ -175,9 +179,9 @@ public class IMatView extends FrameView {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(189, 189, 189)
+                .addGap(209, 209, 209)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(latestPurchasePanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(latestPurchasePanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -198,30 +202,14 @@ public class IMatView extends FrameView {
 
         jPanel1.add(jPanel3);
 
+        mainPanel.add(jPanel1, java.awt.BorderLayout.NORTH);
+
         searchPanel1.setName("searchPanel1"); // NOI18N
+        mainPanel.add(searchPanel1, java.awt.BorderLayout.WEST);
 
         jPanel4.setName("jPanel4"); // NOI18N
         jPanel4.setLayout(new java.awt.GridLayout(1, 0));
-
-        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
-        mainPanel.setLayout(mainPanelLayout);
-        mainPanelLayout.setHorizontalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 974, Short.MAX_VALUE)
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addComponent(searchPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 752, Short.MAX_VALUE))
-        );
-        mainPanelLayout.setVerticalGroup(
-            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE)
-                    .addComponent(searchPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 398, Short.MAX_VALUE)))
-        );
+        mainPanel.add(jPanel4, java.awt.BorderLayout.EAST);
 
         setComponent(mainPanel);
     }// </editor-fold>//GEN-END:initComponents
