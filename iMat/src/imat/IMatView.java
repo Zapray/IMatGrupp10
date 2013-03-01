@@ -29,6 +29,7 @@ public class IMatView extends FrameView {
         manuallyInitComponents();
         
         jPanel4.add(new SplashPanel());
+        jScrollPane1.getVerticalScrollBar().setUnitIncrement(10);
         
         
     }
